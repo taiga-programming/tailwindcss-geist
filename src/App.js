@@ -1,23 +1,22 @@
-import logo from './logo.svg';
 import './App.css';
+import './App.css'
+import { Card, Note, Spacer} from '@geist-ui/react';
+import Chat from './components/chat/Chat';
+import Paginations from './components/paginations/Paginations'
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React!!!
-        </a>
-      </header>
+      <Card shadow>
+        <Note type="success">This is just practice tailwind.css and geist-ui</Note>
+      </Card>
+      <Spacer y={2.0} />
+        <Chat/>
+      <Spacer y={1.5} /> 
+        <Chat/>
+      <Spacer y={3.7} /> 
+        <Paginations/>
+      <Spacer y={2.5} /> 
     </div>
   );
 }
